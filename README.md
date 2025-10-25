@@ -1,112 +1,49 @@
-# GPT-2 Language Model Analysis — ShadowFox AIML Internship (Advanced Task)
+# GPT-2 Advanced Analysis
 
-This project implements and analyzes **GPT-2**, a transformer-based language model for natural language generation.  
-The goal is to explore how GPT-2 behaves under different conditions and understand its limitations, strengths, and ethical concerns.
+## Overview
 
----
+This project demonstrates a comprehensive analysis and evaluation of the GPT-2 language model using a Jupyter notebook environment. It covers model setup, text generation, experiment design, metric evaluation, and visualization of GPT-2’s outputs across diverse domains and generation settings.
 
-## 📌 Project Objectives
-✅ Implement GPT-2 using Transformer libraries  
-✅ Run controlled experiments on text generation  
-✅ Measure performance using:
-- Perplexity (language model quality)
-- Lexical diversity (Distinct-1)
-- Repetition rate
+## Features
 
-✅ Visualize results and interpret model behavior  
-✅ Provide ethical and research-based insights  
-✅ Publish Proof of Work to GitHub + LinkedIn
+- Load and configure GPT-2 using Hugging Face Transformers and PyTorch
+- Accepts custom text prompts for domain adaptation experiments
+- Generates samples under varied temperature, top-k, and top-p parameters
+- Computes quality metrics (Perplexity, Distinct-1 lexical diversity, word repetition)
+- Plots diversity, coherence, and surprise over experimental runs
+- Generates word clouds and token probability heatmaps for model interpretation
+- Saves experiment results for reporting and review
 
----
+## Installation
 
-## 🚀 How It Works
 
-### ✅ Prompts Used
-- Technology text
-- Story writing
-- Medical domain text
+## Usage
 
-### ✅ Experimental Variables
-- Temperature values: **0.2, 0.7, 1.0, 1.2**
-- Sampling method: Random sampling enabled
+1. Open `GPT2_analysis.ipynb` in Jupyter Notebook or Jupyter Lab.
+2. Run all cells step-by-step to:
+    - Initialize, load the pretrained GPT-2 model, and set random seeds.
+    - Test and analyze outputs for multiple types of prompts.
+    - Visualize metrics and interpret model behavior.
+    - Save results as JSON for future reporting.
 
-These settings reveal GPT-2’s behavior across creativity vs coherence trade-offs.
+## Project Structure
 
----
+| File                 | Purpose                                     |
+|----------------------|---------------------------------------------|
+| GPT2_analysis.ipynb  | Main analysis notebook                      |
+| experimentresults.json  | Saved outputs and metrics for reference   |
 
-## 📊 Key Results
+## Results
 
-| Temperature | Behavior Summary |
-|------------:|----------------|
-| 0.2 | Safe, repetitive, less creative |
-| 0.7 | Balanced creativity + coherence |
-| 1.0 | More narrative flow, some hallucination |
-| 1.2 | Very creative but unstable and inaccurate |
+- Compares model responses across temperatures and prompt types
+- Reports diversity, coherence, and confidence in generated text
+- Highlights strengths and weaknesses from experimental evidence
 
-### Domain Sensitivity
-| Domain | Performance | Observation |
-|--------|:-----------:|-------------|
-| Story | ⭐⭐⭐⭐ | Very fluent narrative |
-| Tech | ⭐⭐⭐ | Good but generic |
-| Medical | ⭐⭐ | High hallucination + safety risks |
+## Contributing
 
-### Perplexity Trends
-Higher temperature tends to produce:
-- Higher perplexity (less confident prediction)
-- More randomness in words
+Fork the repo and submit pull requests for new metrics, prompt categories, or visualization styles.
 
----
+## License
 
-## 🎨 Visualizations Included (in Notebook)
-✔ Perplexity vs Temperature plots  
-✔ Lexical diversity vs Temperature  
-✔ Token confidence graph  
-✔ Word cloud of all generated text  
+MIT License
 
----
-
-## 🔍 Research Questions & Findings
-1️⃣ **How does temperature affect generation?**  
-Higher temperature = more creativity, less reliability  
-
-2️⃣ **Can GPT-2 maintain long-term context?**  
-Maintains short context, drifts after ~70+ tokens  
-
-3️⃣ **Does GPT-2 adapt to domain-specific input?**  
-Performs poorly on specialized fields (e.g., medical)
-
----
-
-## ⚠ Ethical Considerations
-- GPT-2 hallucinates facts (not suitable for authoritative info)
-- Bias from internet training data persists
-- Outputs must be validated before real-world use
-
----
-
-## ✅ Conclusion
-GPT-2 is excellent for **creative text generation** but unreliable for:
-- Factual responses
-- Domain-critical content
-
-Recommendations:
-- Fine-tune on specific data for improved accuracy
-- Add safety filtering + fact verification
-
----
-
-## 🛠 Setup Instructions
-
-### Run Notebook in Google Colab
-Open `GPT2_analysis.ipynb` and run all cells  
-Requirements auto-install inside Colab
-
-### Run Locally in VS Code
-
-```bash
-cd ShadowFox
-python -m venv env
-env\Scripts\activate   # (Windows)
-pip install -r requirements.txt
-cd src
-python experiment.py
