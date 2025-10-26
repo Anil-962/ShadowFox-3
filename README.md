@@ -109,7 +109,22 @@ All dependencies auto-install inside the notebook.
 No local setup required.
 
 ---
+## 📸 Output & Visual Results
 
+Below are sample visualizations from the GPT-2 analysis:
+
+### ✅ Word Cloud (Generated Text)
+![Word Cloud](screenshots/wordcloud.png)
+
+### ✅ Perplexity vs Temperature
+![Perplexity Plot](screenshots/perplexity_vs_temperature.png)
+
+### ✅ Token Confidence Visualization
+![Token Confidence](screenshots/token_logprob_plot.png)
+
+### ✅ Example Generation Output
+![Generated Output](screenshots/generation_sample.png)
+----
 ## 👤 Author
 
 **Ani**  
