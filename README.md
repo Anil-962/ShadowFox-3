@@ -5,7 +5,8 @@ The goal is to analyze how GPT-2 generates language, how well it understands con
 and how its behavior changes with temperature and domain-specific prompts.
 
 ---
-
+[Open in Colab]([https://colab.research.google.com/…](https://colab.research.google.com/drive/1XTZACHnnNVQDIXSx0N8rIhzWn-nL-C5d))  
+----
 ## 🔹 Project Summary
 
 | Item | Status |
