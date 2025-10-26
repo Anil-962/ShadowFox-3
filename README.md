@@ -114,16 +114,16 @@ No local setup required.
 Below are sample visualizations from the GPT-2 analysis:
 
 ### ✅ Word Cloud (Generated Text)
-![Word Cloud](screenshots/wordcloud.png)
+![Distinct](output/Distinct_vs_temo.png)
 
 ### ✅ Perplexity vs Temperature
-![Perplexity Plot](screenshots/perplexity_vs_temperature.png)
+![Perplexity Plot](output/perplexiti_vs_temp.png)
 
 ### ✅ Token Confidence Visualization
-![Token Confidence](screenshots/token_logprob_plot.png)
+![Token Confidence](output/Negative.png)
 
 ### ✅ Example Generation Output
-![Generated Output](screenshots/generation_sample.png)
+![Generated Output](output/Final_out_put.png)
 ----
 ## 👤 Author
 
