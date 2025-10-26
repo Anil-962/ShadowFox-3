@@ -1,49 +1,121 @@
-# GPT-2 Advanced Analysis
+# GPT-2 Language Model Exploration & Analysis — ShadowFox AIML Internship (Advanced Task)
 
-## Overview
+This repository contains a complete Google Colab implementation of GPT-2.  
+The goal is to analyze how GPT-2 generates language, how well it understands context,  
+and how its behavior changes with temperature and domain-specific prompts.
 
-This project demonstrates a comprehensive analysis and evaluation of the GPT-2 language model using a Jupyter notebook environment. It covers model setup, text generation, experiment design, metric evaluation, and visualization of GPT-2’s outputs across diverse domains and generation settings.
+---
 
-## Features
+## 🔹 Project Summary
 
-- Load and configure GPT-2 using Hugging Face Transformers and PyTorch
-- Accepts custom text prompts for domain adaptation experiments
-- Generates samples under varied temperature, top-k, and top-p parameters
-- Computes quality metrics (Perplexity, Distinct-1 lexical diversity, word repetition)
-- Plots diversity, coherence, and surprise over experimental runs
-- Generates word clouds and token probability heatmaps for model interpretation
-- Saves experiment results for reporting and review
+| Item | Status |
+|------|:-----:|
+| Large Language Model | GPT-2 |
+| Notebook Name | `GPT2_analysis.ipynb` |
+| Framework | Hugging Face Transformers |
+| Device | GPU (if enabled in Colab) |
 
-## Installation
+This notebook showcases:
+✅ Text generation experiments  
+✅ Perplexity scoring  
+✅ Lexical diversity measurement  
+✅ Repetition analysis  
+✅ Visualizations (word cloud, token confidence, performance charts)  
+✅ Ethical considerations + conclusions  
 
+---
 
-## Usage
+## 📌 Key Experiments
 
-1. Open `GPT2_analysis.ipynb` in Jupyter Notebook or Jupyter Lab.
-2. Run all cells step-by-step to:
-    - Initialize, load the pretrained GPT-2 model, and set random seeds.
-    - Test and analyze outputs for multiple types of prompts.
-    - Visualize metrics and interpret model behavior.
-    - Save results as JSON for future reporting.
+We tested GPT-2 on different prompts:
 
-## Project Structure
+- Technology
+- Story / narrative
+- Medical domain
+- Q&A format
 
-| File                 | Purpose                                     |
-|----------------------|---------------------------------------------|
-| GPT2_analysis.ipynb  | Main analysis notebook                      |
-| experimentresults.json  | Saved outputs and metrics for reference   |
+And compared across multiple **temperature** settings:
 
-## Results
+### Observed Effects:
+| Temperature ↑ | Creativity ↑ | Accuracy ↓ | Hallucination ↑ |
+|:------------|:------------:|:----------:|:---------------:|
+| ✅ More surprising output | ❌ Less factual |
 
-- Compares model responses across temperatures and prompt types
-- Reports diversity, coherence, and confidence in generated text
-- Highlights strengths and weaknesses from experimental evidence
+### Domain Knowledge:
+| Domain | Performance |
+|--------|:-----------:|
+| Story | ⭐⭐⭐⭐ |
+| Tech | ⭐⭐⭐ |
+| Medical | ⭐⭐ (hallucination risk) |
 
-## Contributing
+---
 
-Fork the repo and submit pull requests for new metrics, prompt categories, or visualization styles.
+## 📊 Visual Results Included
 
-## License
+- Perplexity vs Temperature Plot
+- Distinct-1 Diversity Chart
+- Token Confidence Curve
+- Word Cloud of All Generated Text
 
-MIT License
+These help demonstrate **strengths and weaknesses** in GPT-2 reasoning.
 
+---
+
+## 🔍 Research Questions
+
+The notebook answers:
+1️⃣ How does temperature impact text quality?  
+2️⃣ Does GPT-2 maintain context over longer sequences?  
+3️⃣ How bad is GPT-2 on domain-specific tasks (medical)?  
+
+Each question is supported with:
+✔ Metrics  
+✔ Output examples  
+✔ Visualizations  
+
+---
+
+## ⚠ Ethical Considerations
+
+GPT-2:
+- Produces **confident but false information**
+- May generate biased/harmful text
+- Not suitable for critical domains without safeguards
+
+This is documented in the analysis section.
+
+---
+
+## ✅ Proof of Work Deliverables
+
+| Requirement | Provided |
+|------------|:--------:|
+| Colab Notebook | ✅ |
+| Experiment Results | ✅ |
+| Visualizations | ✅ |
+| Ethical + Research insights | ✅ |
+| Screenshots for submission | ✅ Required separately |
+| LinkedIn Proof of Work video | ✅ Required separately |
+
+---
+
+## ▶ How to Run This Notebook
+
+1️⃣ Open `GPT2_analysis.ipynb` in Google Colab  
+2️⃣ Runtime → Change Runtime Type → GPU  
+3️⃣ Run all cells in order  
+All dependencies auto-install inside the notebook.
+
+No local setup required.
+
+---
+
+## 👤 Author
+
+**Ani**  
+ShadowFox AIML Intern  
+Project Type: **Advanced Level — Language Model Deployment & Evaluation**
+
+---
+
+⭐ If you found this useful, star the repo!
