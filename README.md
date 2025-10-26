@@ -117,7 +117,7 @@ Below are sample visualizations from the GPT-2 analysis:
 ![Distinct](output/Distinct_vs_temo.png)
 
 ### ✅ Perplexity vs Temperature
-![Perplexity Plot](output/perplexiti_vs_temp.png)
+![Perplexity Plot](output/Perplexiti_temp.png)
 
 ### ✅ Token Confidence Visualization
 ![Token Confidence](output/Negative.png)
